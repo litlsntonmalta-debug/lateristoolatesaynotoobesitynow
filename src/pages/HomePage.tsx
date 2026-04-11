@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, Globe, BookOpen } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import Timeline from "@/components/Timeline";
 
 const HomePage = () => {
   return (
@@ -73,6 +74,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Timeline */}
+      <Timeline />
 
       {/* Partners preview */}
       <section className="section-padding">
