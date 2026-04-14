@@ -1,3 +1,8 @@
+import logoFrance from "@/assets/logo-france.png";
+import logoTurkey from "@/assets/logo-turkey.png";
+import logoRomania from "@/assets/logo-romania.png";
+import logoMalta from "@/assets/logo-malta.png";
+
 const partners = [
   {
     country: "🇫🇷 France",
@@ -9,6 +14,7 @@ const partners = [
     description:
       "Part of the Cité Scientifique, Technologique et Professionnelle de Montesoro — the biggest high school campus on the island of Corsica. Spread over 7 hectares with 1,900 students, 240 teachers, and 30 different training courses. The school focuses on science & environment (E3D sustainability label), multilingualism, digital education, and equal opportunities.",
     students: "15–19 years old",
+    logo: logoFrance,
   },
   {
     country: "🇹🇷 Türkiye",
@@ -19,6 +25,7 @@ const partners = [
     description:
       'A prestigious public high school in Çukurova, Adana, offering a 4-year education program for students aged 14–18. Holds the titles of "Nutrition Friendly School" and "White Flag" under the "Clean School, Healthy School" initiative. Active in eTwinning with National and European Quality Labels, and holder of the eTwinning school label.',
     students: "14–18 years old",
+    logo: logoTurkey,
   },
   {
     country: "🇷🇴 Romania",
@@ -29,6 +36,7 @@ const partners = [
     description:
       "An educational institution for students' free time, with 70 years of history. Pupils attend after their compulsory school program to enhance skills in artistic, technical, or sport fields. Has branches across Bacău County with 44 teachers. Experienced in five European projects (Comenius and Erasmus+) since 2013, with multiple eTwinning quality labels. Reconfirmed as eTwinning school 2024–2025 and European Blue School since December 2023.",
     students: "5–19 years old",
+    logo: logoRomania,
   },
   {
     country: "🇲🇹 Malta",
@@ -39,6 +47,7 @@ const partners = [
     description:
       "A state school welcoming pupils aged 15–17 who have not fitted into the mainstream system and are at risk of becoming early school leavers. Provides vocational and applied subject training with hands-on work. Facilities include specialised workshops, a gym, library, and recreational areas. Committed to student wellbeing and healthy eating — only healthy food is sold in the school canteen.",
     students: "15–17 years old",
+    logo: logoMalta,
   },
 ];
 
@@ -54,13 +63,13 @@ const PartnersPage = () => (
         {partners.map((p) => (
           <div key={p.name} className="bg-card rounded-lg border border-border shadow-sm overflow-hidden">
             <div className="p-6 md:p-8">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="text-3xl">{p.country.split(" ")[0]}</span>
-                <div>
+              <div className="flex flex-wrap items-center gap-4 mb-4">
+                <img src={p.logo} alt={`${p.name} logo`} className="h-16 w-16 object-contain rounded bg-background" />
+                <div className="flex-1 min-w-0">
                   <h2 className="text-xl font-heading font-bold text-foreground">{p.name}</h2>
-                  <p className="text-sm text-muted-foreground">{p.city} · {p.type}</p>
+                  <p className="text-sm text-muted-foreground">{p.country} · {p.city} · {p.type}</p>
                 </div>
-                {p.role && <span className="ml-auto text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">{p.role}</span>}
+                {p.role && <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">{p.role}</span>}
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">{p.description}</p>
               <div className="flex flex-wrap gap-4 text-sm">
