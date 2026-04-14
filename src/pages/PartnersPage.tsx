@@ -14,7 +14,7 @@ const partners = [
     country: "🇹🇷 Türkiye",
     name: "Mehmet Özoncel Anadolu Lisesi",
     city: "Adana",
-    website: "",
+    website: "https://www.instagram.com/explore/locations/40157024/mehmet-ozoncel-anadolu-lisesi/",
     type: "General education (secondary level)",
     description:
       'A prestigious public high school in Çukurova, Adana, offering a 4-year education program for students aged 14–18. Holds the titles of "Nutrition Friendly School" and "White Flag" under the "Clean School, Healthy School" initiative. Active in eTwinning with National and European Quality Labels, and holder of the eTwinning school label.',
@@ -24,7 +24,7 @@ const partners = [
     country: "🇷🇴 Romania",
     name: "Palatul Copiilor (Children's Palace)",
     city: "Bacău",
-    website: "http://www.palatulcopiilor.com",
+    website: "https://www.palatulcopiilorbacau.ro/",
     type: "General education (secondary level)",
     description:
       "An educational institution for students' free time, with 70 years of history. Pupils attend after their compulsory school program to enhance skills in artistic, technical, or sport fields. Has branches across Bacău County with 44 teachers. Experienced in five European projects (Comenius and Erasmus+) since 2013, with multiple eTwinning quality labels. Reconfirmed as eTwinning school 2024–2025 and European Blue School since December 2023.",
@@ -34,7 +34,7 @@ const partners = [
     country: "🇲🇹 Malta",
     name: "Alternative Learning Programme (ALP)",
     city: "Paola",
-    website: "http://alp.skola.edu.mt",
+    website: "https://sites.google.com/view/alppaola/home",
     type: "Vocational Training (secondary level)",
     description:
       "A state school welcoming pupils aged 15–17 who have not fitted into the mainstream system and are at risk of becoming early school leavers. Provides vocational and applied subject training with hands-on work. Facilities include specialised workshops, a gym, library, and recreational areas. Committed to student wellbeing and healthy eating — only healthy food is sold in the school canteen.",
