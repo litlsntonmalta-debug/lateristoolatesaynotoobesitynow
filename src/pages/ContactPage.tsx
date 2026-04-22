@@ -34,7 +34,7 @@ const ContactPage = () => (
 
           <h3 className="font-heading font-semibold text-foreground">Follow the Project</h3>
           <a
-            href="https://www.facebook.com/share/1BGbyTAwg1/"
+            href="https://www.facebook.com/profile.php?id=61575040831325"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-5 py-3 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity"
