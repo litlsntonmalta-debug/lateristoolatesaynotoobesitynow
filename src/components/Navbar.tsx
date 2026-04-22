@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import projectLogo from "@/assets/project-logo.png";
+import erasmusOfficialLogo from "@/assets/erasmus-official-logo.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -20,9 +22,26 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="text-lg md:text-xl font-heading font-bold text-gradient">
-            LITLSNTON
+        <Link to="/" className="flex items-center gap-3 min-w-0">
+          <img
+            src={projectLogo}
+            alt="Later is Too Late — Say No to Obesity Now project logo"
+            className="h-10 md:h-12 w-auto shrink-0"
+            width={1024}
+            height={1024}
+          />
+          <span className="hidden sm:inline text-base md:text-lg font-heading font-bold text-gradient truncate">
+            LATER IS TOO LATE
+          </span>
+          <span className="hidden md:flex items-center pl-3 ml-1 border-l border-border h-10 shrink-0">
+            <img
+              src={erasmusOfficialLogo}
+              alt="Erasmus+ — Co-funded by the European Union"
+              className="h-8 lg:h-9 w-auto"
+              width={1376}
+              height={768}
+              loading="lazy"
+            />
           </span>
         </Link>
 
