@@ -287,6 +287,21 @@ const Timeline = () => {
                       )}
                       <p className="text-sm text-muted-foreground mt-1">{event.description}</p>
 
+                      {event.images && event.images.length > 0 && (
+                        <div className={cn("mt-3 grid gap-2", event.images.length > 1 ? "grid-cols-2" : "grid-cols-1")}>
+                          {event.images.map((img, k) => (
+                            <div key={k} className="rounded-md overflow-hidden border border-border bg-background">
+                              <img
+                                src={img.src}
+                                alt={img.alt}
+                                loading="lazy"
+                                className={cn("w-full h-40", img.contain ? "object-contain p-1" : "object-cover")}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
                       {event.details && (
                         <div className="mt-2">
                           <button className="text-xs text-primary font-medium flex items-center gap-1">
