@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import erasmusLogo from "@/assets/erasmus-plus-logo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-primary-foreground">
     <div className="container mx-auto px-4 py-12">
+      <div className="flex justify-center mb-10">
+        <div className="bg-white rounded-lg px-8 py-5 shadow-md">
+          <img src={erasmusLogo} alt="Erasmus+ — Enriching lives, opening minds" className="h-16 md:h-20 w-auto" loading="lazy" width={1264} height={848} />
+        </div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="font-heading font-bold text-lg mb-3">LATER IS TOO LATE</h3>
