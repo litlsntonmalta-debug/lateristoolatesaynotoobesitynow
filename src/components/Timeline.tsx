@@ -31,6 +31,7 @@ const events: TimelineEvent[] = [
     description: "Official start of the Erasmus+ KA210-SCH project. Planning phase begins with all four partner schools.",
     type: "milestone",
     status: "completed",
+    images: [{ src: imgKickoff, alt: "Project kick-off meeting with partner schools" }],
   },
   {
     date: "March – May 2025",
