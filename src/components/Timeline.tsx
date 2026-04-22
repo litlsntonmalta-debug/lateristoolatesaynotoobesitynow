@@ -80,6 +80,7 @@ const events: TimelineEvent[] = [
       "Research on bocce, orienteering, and curling",
       "Healthy recipe collections compiled",
     ],
+    images: [{ src: imgPreparatory, alt: "Online preparatory meeting between partner schools", contain: true }],
   },
   {
     date: "27 Sep – 3 Oct 2025",
@@ -97,6 +98,7 @@ const events: TimelineEvent[] = [
       "Walk & environmental clean-up",
       "Adana city tour & traditional kebap dinner",
     ],
+    images: [{ src: imgLtta1, alt: "Group photo from LTTA 1 in Adana, Türkiye - bocce activity" }],
   },
   {
     date: "October – November 2025",
@@ -104,6 +106,7 @@ const events: TimelineEvent[] = [
     description: "Results and experiences from Türkiye mobility shared across partner schools through presentations and social media.",
     type: "activity",
     status: "completed",
+    images: [{ src: imgPostLtta1, alt: "Press coverage of LTTA 1 in local newspaper Güney Gündemi", contain: true }],
   },
   {
     date: "18 – 21 Nov 2025",
@@ -122,6 +125,7 @@ const events: TimelineEvent[] = [
       "Three Cities Walk, Mdina Treasure Hunt",
       "Certificate Awarding Ceremony",
     ],
+    images: [{ src: imgLtta2, alt: "Group photo from LTTA 2 at the Neolithic Temples in Malta" }],
   },
   {
     date: "December 2025 – February 2026",
