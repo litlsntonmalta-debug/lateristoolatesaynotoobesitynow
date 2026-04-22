@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, Globe, BookOpen } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import erasmusLogo from "@/assets/erasmus-plus-logo.png";
 import Timeline from "@/components/Timeline";
 
 const HomePage = () => {
@@ -30,6 +31,22 @@ const HomePage = () => {
               <Link to="/partners">Meet Our Partners</Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Erasmus+ Programme Badge */}
+      <section className="bg-background py-10 border-b border-border">
+        <div className="container mx-auto px-4 flex flex-col items-center text-center gap-4">
+          <img
+            src={erasmusLogo}
+            alt="Erasmus+ — Enriching lives, opening minds"
+            className="h-20 md:h-28 w-auto"
+            width={1264}
+            height={848}
+          />
+          <p className="text-muted-foreground text-sm md:text-base max-w-2xl">
+            Co-funded by the Erasmus+ Programme of the European Union
+          </p>
         </div>
       </section>
 
