@@ -19,7 +19,7 @@ const AboutPage = () => (
               All four partner countries rank among those with the highest obesity rates in Europe. This project presents an opportunity to educate students about obesity, its root causes, associated diseases, and strategies for prevention — while fostering cultural exchange and European citizenship.
             </p>
           </div>
-          <img src={aboutImg} alt="Students in a healthy cooking workshop" className="rounded-lg shadow-md w-full" loading="lazy" width={800} height={600} />
+          <img src={aboutImg} alt="Later is too late: Say no to obesity now - Erasmus+ project illustration" className="rounded-lg shadow-md w-full" loading="lazy" width={800} height={600} />
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
