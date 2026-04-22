@@ -152,6 +152,7 @@ const events: TimelineEvent[] = [
       "Zumba, dance & yoga sessions",
       "Project evaluation & dissemination",
     ],
+    images: [{ src: imgLtta3, alt: "Partner schools holding project banners in Bastia, Corsica" }],
   },
   {
     date: "Spring/Summer 2026",
@@ -167,6 +168,7 @@ const events: TimelineEvent[] = [
       "Healthy snack cooking competition",
       "Web 2.0 nutrition games",
     ],
+    images: [{ src: logoRomania, alt: "Palatul Copiilor Bacău logo - host of LTTA 4", contain: true }],
   },
   {
     date: "July 2026",
@@ -180,6 +182,7 @@ const events: TimelineEvent[] = [
       "Impact assessment surveys completed",
       "Sustainability plan shared with partner schools",
     ],
+    images: [{ src: imgFinalReport, alt: "Writing the final project report" }],
   },
 ];
 
