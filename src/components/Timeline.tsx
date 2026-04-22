@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Calendar, MapPin, CheckCircle2, Clock, ChevronDown, ChevronUp } from "lucide-react";
+import imgKickoff from "@/assets/timeline/kickoff.jpg";
+import imgLogoContest from "@/assets/timeline/logo-contest.jpg";
+import imgFacebook from "@/assets/timeline/facebook.png";
+import imgInstagram from "@/assets/timeline/instagram.png";
+import imgPreparatory from "@/assets/timeline/preparatory.png";
+import imgLtta1 from "@/assets/timeline/ltta1-adana.jpg";
+import imgPostLtta1 from "@/assets/timeline/post-ltta1.jpg";
+import imgLtta2 from "@/assets/timeline/ltta2-malta.jpg";
+import imgLtta3 from "@/assets/timeline/ltta3-france.jpg";
+import imgFinalReport from "@/assets/timeline/final-report.jpg";
+import logoRomania from "@/assets/logo-romania.png";
 
 interface TimelineEvent {
   date: string;
@@ -10,6 +21,7 @@ interface TimelineEvent {
   type: "milestone" | "mobility" | "activity" | "output";
   status: "completed" | "upcoming";
   details?: string[];
+  images?: { src: string; alt: string; contain?: boolean }[];
 }
 
 const events: TimelineEvent[] = [
