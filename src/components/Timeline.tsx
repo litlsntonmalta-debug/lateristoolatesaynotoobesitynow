@@ -72,7 +72,7 @@ const events: TimelineEvent[] = [
   {
     date: "June – August 2025",
     title: "Preparatory Activities for LTTA 1",
-    description: "Student presentations on traditional sports, healthy recipes, and country profiles prepared for the first mobility.",
+    description: "Presentations on traditional sports, healthy recipes, and country profiles prepared for the first mobility.",
     type: "activity",
     status: "completed",
     details: [
