@@ -56,6 +56,7 @@ const events: TimelineEvent[] = [
       "Online voting across partner schools",
       "Winning logo adopted for all project materials",
     ],
+    images: [{ src: imgLogoContest, alt: "Winning project logo - Later is too late: Say no to obesity now", contain: true }],
   },
   {
     date: "May 2025",
@@ -63,6 +64,10 @@ const events: TimelineEvent[] = [
     description: "Official project website and Facebook page created to disseminate activities and results.",
     type: "output",
     status: "completed",
+    images: [
+      { src: imgFacebook, alt: "Project Facebook page", contain: true },
+      { src: imgInstagram, alt: "Project Instagram page", contain: true },
+    ],
   },
   {
     date: "June – August 2025",
