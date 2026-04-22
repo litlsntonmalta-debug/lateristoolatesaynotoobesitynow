@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Calendar, MapPin, CheckCircle2, Clock, ChevronDown, ChevronUp } from "lucide-react";
+import imgKickoff from "@/assets/timeline/kickoff.jpg";
+import imgLogoContest from "@/assets/timeline/logo-contest.jpg";
+import imgFacebook from "@/assets/timeline/facebook.png";
+import imgInstagram from "@/assets/timeline/instagram.png";
+import imgPreparatory from "@/assets/timeline/preparatory.png";
+import imgLtta1 from "@/assets/timeline/ltta1-adana.jpg";
+import imgPostLtta1 from "@/assets/timeline/post-ltta1.jpg";
+import imgLtta2 from "@/assets/timeline/ltta2-malta.jpg";
+import imgLtta3 from "@/assets/timeline/ltta3-france.jpg";
+import imgFinalReport from "@/assets/timeline/final-report.jpg";
+import logoRomania from "@/assets/logo-romania.png";
 
 interface TimelineEvent {
   date: string;
@@ -10,6 +21,7 @@ interface TimelineEvent {
   type: "milestone" | "mobility" | "activity" | "output";
   status: "completed" | "upcoming";
   details?: string[];
+  images?: { src: string; alt: string; contain?: boolean }[];
 }
 
 const events: TimelineEvent[] = [
@@ -19,6 +31,7 @@ const events: TimelineEvent[] = [
     description: "Official start of the Erasmus+ KA210-SCH project. Planning phase begins with all four partner schools.",
     type: "milestone",
     status: "completed",
+    images: [{ src: imgKickoff, alt: "Project kick-off meeting with partner schools" }],
   },
   {
     date: "March – May 2025",
@@ -43,6 +56,7 @@ const events: TimelineEvent[] = [
       "Online voting across partner schools",
       "Winning logo adopted for all project materials",
     ],
+    images: [{ src: imgLogoContest, alt: "Winning project logo - Later is too late: Say no to obesity now", contain: true }],
   },
   {
     date: "May 2025",
@@ -50,6 +64,10 @@ const events: TimelineEvent[] = [
     description: "Official project website and Facebook page created to disseminate activities and results.",
     type: "output",
     status: "completed",
+    images: [
+      { src: imgFacebook, alt: "Project Facebook page", contain: true },
+      { src: imgInstagram, alt: "Project Instagram page", contain: true },
+    ],
   },
   {
     date: "June – August 2025",
@@ -62,6 +80,7 @@ const events: TimelineEvent[] = [
       "Research on bocce, orienteering, and curling",
       "Healthy recipe collections compiled",
     ],
+    images: [{ src: imgPreparatory, alt: "Online preparatory meeting between partner schools", contain: true }],
   },
   {
     date: "27 Sep – 3 Oct 2025",
@@ -79,6 +98,7 @@ const events: TimelineEvent[] = [
       "Walk & environmental clean-up",
       "Adana city tour & traditional kebap dinner",
     ],
+    images: [{ src: imgLtta1, alt: "Group photo from LTTA 1 in Adana, Türkiye - bocce activity" }],
   },
   {
     date: "October – November 2025",
@@ -86,6 +106,7 @@ const events: TimelineEvent[] = [
     description: "Results and experiences from Türkiye mobility shared across partner schools through presentations and social media.",
     type: "activity",
     status: "completed",
+    images: [{ src: imgPostLtta1, alt: "Press coverage of LTTA 1 in local newspaper Güney Gündemi", contain: true }],
   },
   {
     date: "18 – 21 Nov 2025",
@@ -104,6 +125,7 @@ const events: TimelineEvent[] = [
       "Three Cities Walk, Mdina Treasure Hunt",
       "Certificate Awarding Ceremony",
     ],
+    images: [{ src: imgLtta2, alt: "Group photo from LTTA 2 at the Neolithic Temples in Malta" }],
   },
   {
     date: "December 2025 – February 2026",
@@ -130,6 +152,7 @@ const events: TimelineEvent[] = [
       "Zumba, dance & yoga sessions",
       "Project evaluation & dissemination",
     ],
+    images: [{ src: imgLtta3, alt: "Partner schools holding project banners in Bastia, Corsica" }],
   },
   {
     date: "Spring/Summer 2026",
@@ -145,6 +168,7 @@ const events: TimelineEvent[] = [
       "Healthy snack cooking competition",
       "Web 2.0 nutrition games",
     ],
+    images: [{ src: logoRomania, alt: "Palatul Copiilor Bacău logo - host of LTTA 4", contain: true }],
   },
   {
     date: "July 2026",
@@ -158,6 +182,7 @@ const events: TimelineEvent[] = [
       "Impact assessment surveys completed",
       "Sustainability plan shared with partner schools",
     ],
+    images: [{ src: imgFinalReport, alt: "Writing the final project report" }],
   },
 ];
 
@@ -261,6 +286,21 @@ const Timeline = () => {
                         </p>
                       )}
                       <p className="text-sm text-muted-foreground mt-1">{event.description}</p>
+
+                      {event.images && event.images.length > 0 && (
+                        <div className={cn("mt-3 grid gap-2", event.images.length > 1 ? "grid-cols-2" : "grid-cols-1")}>
+                          {event.images.map((img, k) => (
+                            <div key={k} className="rounded-md overflow-hidden border border-border bg-background">
+                              <img
+                                src={img.src}
+                                alt={img.alt}
+                                loading="lazy"
+                                className={cn("w-full h-40", img.contain ? "object-contain p-1" : "object-cover")}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
 
                       {event.details && (
                         <div className="mt-2">
