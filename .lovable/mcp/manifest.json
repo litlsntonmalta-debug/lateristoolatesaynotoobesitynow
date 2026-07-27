@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "sdk_version": "0.24.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "later-is-too-late-mcp",
+      "version": "0.1.0",
+      "title": "LATER IS TOO LATE — Erasmus+ project MCP"
+    },
+    "tools": [
+      {
+        "name": "get_project_info",
+        "title": "Get project info",
+        "description": "Return overview of the Erasmus+ project 'LATER IS TOO LATE: SAY NO TO OBESITY NOW', including code, dates, coordinator, aims, and website.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_partners",
+        "title": "List partner schools",
+        "description": "List the four partner schools taking part in the Erasmus+ project, with country, role, city, and website.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_mobilities",
+        "title": "List mobilities & meetings",
+        "description": "List the project's Learning, Teaching and Training Activities (LTTAs) in chronological order, with host country, city, school, and theme.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_timeline",
+        "title": "List project timeline",
+        "description": "Return the chronological project timeline from March 2025 to July 2026, with date, type (Milestone/Mobility/Activity/Output), and title.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
