@@ -11,7 +11,7 @@ import imgPostLtta1 from "@/assets/timeline/post-ltta1.jpg";
 import imgLtta2 from "@/assets/timeline/ltta2-malta.jpg";
 import imgLtta3 from "@/assets/timeline/ltta3-france.jpg";
 import imgFinalReport from "@/assets/timeline/final-report.jpg";
-import logoRomania from "@/assets/logo-romania.png";
+import imgLtta4 from "@/assets/timeline/ltta4-romania.jpg";
 
 interface TimelineEvent {
   date: string;
@@ -168,7 +168,7 @@ const events: TimelineEvent[] = [
       "Healthy snack cooking competition",
       "Web 2.0 nutrition games",
     ],
-    images: [{ src: logoRomania, alt: "Palatul Copiilor Bacău logo - host of LTTA 4", contain: true }],
+    images: [{ src: imgLtta4, alt: "Group photo from LTTA 4 in Bacău, Romania" }],
   },
   {
     date: "July 2026",
