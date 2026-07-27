@@ -12,6 +12,7 @@ const navItems = [
   { label: "Timeline", path: "/timeline" },
   { label: "Mobilities & Meetings", path: "/mobilities" },
   { label: "Gallery", path: "/gallery" },
+  { label: "Repository", path: "/repository" },
   { label: "Contact", path: "/contact" },
 ];
 
