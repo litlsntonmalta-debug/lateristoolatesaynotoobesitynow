@@ -136,7 +136,7 @@ export const mobilities: Mobility[] = [
       { id: "l1a5", title: "Walk & Environmental Clean-up", description: "Physical activity combined with environmental responsibility." },
     ],
     documentation: [
-      { id: "l1d1", title: "Opening Ceremony Programme", type: "PDF" as any, documents: [{ name: "Opening Ceremony.pdf", type: "PDF" }] },
+      { id: "l1d1", title: "Opening Ceremony Programme", documents: [{ name: "Opening Ceremony.pdf", type: "PDF" }] },
       { id: "l1d2", title: "Country Presentations", documents: [{ name: "France.pptx", type: "PPTX" }, { name: "Türkiye.pptx", type: "PPTX" }, { name: "Malta.pptx", type: "PPTX" }, { name: "Romania.pptx", type: "PPTX" }] },
       { id: "l1d3", title: "Evaluation Worksheets", documents: [{ name: "Student Evaluation.docx", type: "DOCX" }] },
     ],
