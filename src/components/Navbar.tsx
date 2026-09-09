@@ -13,6 +13,7 @@ const navItems = [
   { label: "Mobilities & Meetings", path: "/mobilities" },
   { label: "Gallery", path: "/gallery" },
   { label: "Repository", path: "/repository" },
+  { label: "European Dishes Ebook", path: "/european-dishes-ebook" },
   { label: "Contact", path: "/contact" },
 ];
 
